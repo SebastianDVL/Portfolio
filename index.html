@@ -1,47 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/30ec5c3528.js" crossorigin="anonymous"></script>
     <script src="controlador.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode:'class',
+            theme: {
+                extend: {}
+            }
+        }
+      </script>
     <title>Sebastian | Portfolio</title>
 </head>
-<body>
+<body class="font-mono dark:bg-gray-800">
     <header>
-        <div class="container p-2 bg-teal-600"></div>
-        <div class="container">
-            <div class="grid grid-cols-2 p-5 gap-6">
-                <div class="flex justify-center">
-                    <h1>Sebastian Lopez</h1>
-                </div>
-                <div>
-                    <nav>
-                        <ul class="flex divide-x-2 gap-4">
-                            <li class="px-3"><a href="">Portfolio</a></li>
-                            <li class="px-3"><a href="">Services</a></li>  
-                            <li class="px-3"><a href="">About Me</a></li>  
-                            <li class="px-3"><a href="">Contact Info</a></li>                    
-                        </ul>
-                    </nav>
-                </div>
-                
-            </div>    
+        <div class="p-2 bg-amber-500">
+
         </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-slate-600 dark:text-white relative">
+            <div class="flex justify-center text-3xl py-3">
+               <div class="flex items-center p-2 text-amber-700">
+                <i class="fa-solid fa-chevron-left text-5xl translate-x-4"></i>
+                <i class="fa-solid fa-slash text-4xl translate-x-2 rotate-[80deg]"></i>
+                <div class="flex flex-col">
+                    <p class="leading-5  font-extrabold italic ">sebastianLopez</p>
+                    <p class="text-sm text-gray-800 dark:text-white font-bold italic">Developer</p>
+                </div>
+                <i class="fa-solid fa-chevron-right text-5xl"></i>
+               </div>
+            </div>
+            <div class="flex justify-center flex-col lg:flex-row lg:justify-between items-center px-3">
+                <nav>
+                    <ul class="flex divide-x-2 divide-teal-400 uppercase font-normal gap-4 ">
+                        <li class="pl-3 text-amber-600"><a href="#">Portfolio</a></li>
+                        <li class="pl-3 hover:text-amber-500 transition duration-200"><a href="">Services</a></li>  
+                        <li class="pl-3 hover:text-amber-500 transition duration-200"><a href="">About</a></li>  
+                        <li class="pl-3 hover:text-amber-500 transition duration-200"><a href="">Contact</a></li>                    
+                    </ul>
+                </nav>
+                <select class=" mt-3 mb-3 block cursor-pointer dark:bg-gray-800 dark:text-white rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                </select>
+            </div>
+            
+        </div>    
+      
     </header>
     <main>
-        <div class="container flex bg-teal-700 h-[70vh] mb-[300px]">
-            <div class="m-auto">
-             <button class="bg-violet-800 text-fuchsia-50 p-4 outline outline-offset-4 outline-violet-800 hover:outline-offset-2  hover:bg-violet-900 hover:outline-violet-900 rounded m-auto">Contact Me</button>
-                
+        <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 bg-gradient-to-l from-teal-800 to-teal-600  h-[70vh] text-white font-mono">
+            <div class="order-last md:order-first h-[70vh] flex justify-center">
+                <img src="img/coding.png" class="h-[35vh] md:h-[70vh]"alt="Coding">
+            </div>
+            
+            <div class=" h-[35vh] md:h-[70vh] flex flex-col justify-around p-5">
+                <p class="text-6xl">
+                    Hi! My Name Is Sebastian And I Am A Full Stack Developer With 0 Years Of Experience
+                </p>
+                <button class="bg-amber-500 p-4 hover:bg-amber-400 shadow-xl hover:shadow-lg rounded font-semibold">Contact Me</button>    
             </div>
            
-        </div>
+        </div> 
+        </section>
+        <section>
+            <div class="grid grid-cols-2 place-content-center gap-4 w-2/3 m-auto my-5">
+                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
+                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
+                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
+                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
+                
+            </div>
+        </section>
+       
     </main>
     <footer>
-        <div class="container bg-teal-500 h-20"></div>
+        <div class="bg-teal-500 h-20"></div>
     </footer>
     
-    <script src="https://cdn.tailwindcss.com"></script>
+  
 </body>
 </html>
