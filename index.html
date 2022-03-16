@@ -12,7 +12,8 @@
         tailwind.config = {
             darkMode:'class',
             theme: {
-                extend: {}
+                extend: {
+                }
             }
         }
       </script>
@@ -23,7 +24,7 @@
         <div class="p-2 bg-amber-500">
 
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-slate-600 dark:text-white relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-slate-600 dark:text-white relative ">
             <div class="flex justify-center text-3xl py-3">
                <div class="flex items-center p-2 text-amber-700">
                 <i class="fa-solid fa-chevron-left text-5xl translate-x-4"></i>
@@ -61,7 +62,7 @@
             </div>
             
             <div class=" h-[35vh] md:h-[70vh] flex flex-col justify-around p-5">
-                <p class=" text-sm lg:text-6xl">
+                <p class=" text-3xl lg:text-6xl">
                     Hi! My Name Is Sebastian And I Am A Full Stack Developer With 0 Years Of Experience
                 </p>
                 <button class="bg-amber-500 p-4 hover:bg-amber-400 shadow-xl hover:shadow-lg rounded font-semibold">Contact Me</button>    
@@ -70,7 +71,7 @@
         </div> 
         </section>
         <section>
-            <div class="bg-emerald-900 p-20">
+            <div class="bg-emerald-900 p-14">
 
             </div>
             <div class="rotate-45 h-11 bg-emerald-900 w-11 mx-auto -translate-y-8">
@@ -78,19 +79,58 @@
             </div>
         </section>
         <section>
-            <div class="grid grid-cols-1 md:grid-cols-2 place-content-center gap-6 w-2/3 m-auto my-5">
-                <div class="flex h-80 w-100 bg-[url('img/portfolio.jpg')] bg-cover group text-white hover:scale-105 transition-all cursor-pointer">
-                    <div class= " w-full group-hover:bg-amber-500/50 transition-all grid place-items-center">
-                        <p class="invisible font-extrabold  text-3xl group-hover:visible transition-all">This Portfolio</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-6 w-4/5 md:w-3/5 mx-auto my-5">
+                <div class="flex opacity-0  -translate-x-60 h-96 w-100 bg-[url('img/portfolio.jpg')]  bg-[length:100%_100%] shadow-zinc-600 shadow-sm hover:shadow-xl   group text-white transition-all cursor-pointer hover:scale-[101%] rounded-md">
+                    <div class= " w-full bg-gradient-to-t from-teal-700 transition-all grid grid-cols-1 place-content-end  group-hover:bg-gradient-to-b rounded-md">
+                        <p class="font-extrabold  text-3xl transition-all mx-auto mb-9 place-self-end">This Portfolio</p>
+                        <div class="hidden group-hover:flex h-64  bg-slate-700/80 transition-all px-5  flex-col justify-between rounded-b-md">
+
+                            <p class="text-white text-lg mt-5">This portfolio is a front-end project made for the people in order to introduce myself and talk about me as much as possible.</p>
+                            <a href="https://github.com/SebastianDVL/Portfolio" class="p-5 mb-5 hover:bg-teal-700 bg-teal-800 rounded-md "><i class="fa-brands fa-github"></i> GitHub Repository -></a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex h-80 w-100 bg-[url('img/tienda.jpg')] bg-cover group text-white hover:scale-105 transition-all cursor-pointer">
-                    <div class= " w-full group-hover:bg-amber-500/50 transition-all grid place-items-center">
-                        <p class="invisible font-extrabold  text-3xl group-hover:visible transition-all">On-line Shop</p>
+                <div class="flex opacity-0 translate-x-60 h-96 w-100 bg-[url('img/tienda.png')]  bg-[length:100%_100%] shadow-zinc-600 shadow-sm hover:shadow-xl   group text-white transition-all cursor-pointer hover:scale-[101%] rounded-md">
+                    <div class= " w-full bg-gradient-to-t from-violet-700 transition-all grid grid-cols-1 place-content-end  group-hover:bg-gradient-to-b rounded-md">
+                        <p class="font-extrabold  text-3xl transition-all mx-auto mb-9 place-self-end">On-Line Shop</p>
+                        <div class="hidden group-hover:flex h-64  bg-slate-700/80 transition-all px-5  flex-col justify-between rounded-b-md">
+
+                            <p class="text-white text-lg mt-5">Practice Virtual Shop and Website about shrek where you can read some info about the character or buy some stuff in the online shop (It's not for real)</p>
+                            <a href="https://github.com/SebastianDVL/youtubeGlobant" class="p-5 mb-5 hover:bg-violet-700 bg-violet-800 rounded-md "><i class="fa-brands fa-github"></i> GitHub Repository -></a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
-                <div class="flex h-80 w-100 p-4 bg-violet-800"></div>
+                <div class="flex opacity-0 -translate-x-60 h-96 w-100 bg-[url('img/spotify.jpg')]  bg-[length:100%_100%] shadow-zinc-600 shadow-sm hover:shadow-xl   group text-white transition-all cursor-pointer hover:scale-[101%] rounded-md">
+                    <div class= " w-full bg-gradient-to-t from-green-700 transition-all grid grid-cols-1 place-content-end  group-hover:bg-gradient-to-b rounded-md">
+                        <p class="font-extrabold  text-3xl transition-all mx-auto mb-9 place-self-end">Songs Player</p>
+                        <div class="hidden group-hover:flex h-64  bg-slate-700/80 transition-all px-5  flex-col justify-between rounded-b-md">
+
+                            <p class="text-white text-lg mt-5">A web project based on the Spotify API where i use artists top tracks info from spotify to print them on a web page and you can play any song you want from 5 artists.</p>
+                            <a href="https://github.com/SebastianDVL/pweb1" class="p-5 mb-5 hover:bg-green-700 bg-green-800 rounded-md "><i class="fa-brands fa-github"></i> GitHub Repository -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex opacity-0 translate-x-60 h-96 w-100 bg-[url('img/hospital.jpg')]  bg-[length:100%_100%] shadow-zinc-600 shadow-sm hover:shadow-xl   group text-white transition-all cursor-pointer hover:scale-[101%] rounded-md">
+                    <div class= " w-full bg-gradient-to-t from-blue-700 transition-all grid grid-cols-1 place-content-end  group-hover:bg-gradient-to-b rounded-md">
+                        <p class="font-extrabold  text-3xl transition-all mx-auto mb-9 place-self-end">Hospital</p>
+                        <div class="hidden group-hover:flex h-64  bg-slate-700/80 transition-all px-5  flex-col justify-between rounded-b-md">
+
+                            <p class="text-white text-lg mt-5">Set of web forms for a hospital completly functional</p>
+                            <a href="https://github.com/SebastianDVL/Hospital" class="p-5 mb-5 hover:bg-blue-700 bg-blue-800 rounded-md "><i class="fa-brands fa-github"></i> GitHub Repository -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex opacity-0 -translate-x-60 h-96 w-100 bg-[url('img/games.jpg')]  bg-[length:100%_100%] shadow-zinc-600 shadow-sm hover:shadow-xl hover:shadow-zinc-500  group text-white transition-all cursor-pointer hover:scale-[101%] rounded-md">
+                    <div class= " w-full bg-gradient-to-t from-rose-700 transition-all grid grid-cols-1 place-content-end  group-hover:bg-gradient-to-b rounded-md">
+                        <p class="font-extrabold  text-3xl transition-all mx-auto mb-9 place-self-end">Games Library - Shop</p>
+                        <div class="hidden group-hover:flex h-64  bg-slate-700/80 transition-all px-5  flex-col justify-between rounded-b-md">
+
+                            <p class="text-white text-lg mt-5">Coming soon...</p>
+                            <a href="#" class="p-5 mb-5 hover:bg-rose-700 bg-rose-800 rounded-md "><i class="fa-brands fa-github"></i> GitHub Repository -></a>
+                        </div>
+                    </div>
+                </div>
+               
                 
             </div>
         </section>
